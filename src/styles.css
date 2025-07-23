@@ -1,0 +1,48 @@
+/* src/styles.css */
+body {
+  background: #111;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1f1f1f, #333);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Card Styling for Hover Shadow */
+.tool-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 1rem;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* white shadow */
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  padding: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #222;
+}
+.chat-box {
+  min-height: 300px;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #333;
+}
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+footer {
+  font-size: 0.9rem;
+}

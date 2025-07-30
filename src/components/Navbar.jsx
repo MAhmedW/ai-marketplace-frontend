@@ -1,45 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
 
-const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-      <div className="container-fluid px-4">
-        <Link className="navbar-brand fw-bold text-info" to="/">
-          🤖 AI Marketplace
-        </Link>
-
-        <div className="ms-auto">
-          <div className="dropdown">
-            <button
-              className="btn btn-outline-info dropdown-toggle fw-semibold"
-              type="button"
-              id="menuDropdown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Menu
-            </button>
-            <ul
-              className="dropdown-menu dropdown-menu-end bg-dark border border-secondary animate__animated animate__fadeIn"
-              aria-labelledby="menuDropdown"
-            >
-              <li>
-                <Link className="dropdown-item text-light" to="/tools">
-                  All Tools
-                </Link>
-              </li>
-              <li>
-                <Link className="dropdown-item text-light" to="/pricing">
-                  Pricing
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
+const Navbar = () => (
+  <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <a className="navbar-brand d-flex align-items-center" href="#">
+      <span className="badge bg-dark text-white me-2">ai</span>
+      <strong>marketplace</strong>
+    </a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul className="navbar-nav gap-3">
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#">Models</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#">Industry</a>
+        </li>
+        <li className="nav-item"><a className="nav-link" href="#">Platform</a></li>
+        <li className="nav-item"><a className="nav-link" href="#">Pricing</a></li>
+        <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a href="#" className="btn btn-teal text-white">Get Started</a>
+  </nav>
+);
 
 export default Navbar;

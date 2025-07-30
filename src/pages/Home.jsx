@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Marketplace from "../components/Marketplace";
+import Hero from "../components/HeroSection";
+import Marketplace from "../components/AiMarketplaceClone";
 
 const Home = () => {
   return (
